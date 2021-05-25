@@ -1,0 +1,18 @@
+.cover-heading {
+  font-size: 6rem;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.cover-bg {
+  background-image: url("https://picsum.photos/id/1015/1920/1080/");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

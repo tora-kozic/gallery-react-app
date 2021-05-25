@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { Header, Coverpage, Aboutpage, Workspage, Storepage } from "./App";
+import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import { computeHeadingLevel } from "@testing-library/dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Router>
+    <Header />
+    <main>
+      <Switch>
+        <Route exact path="/" component={Coverpage} />
+        <Route exact path="/home" component={Coverpage} />
+        <Route exact path="/about" component={Aboutpage} />
+        <Route exact path="/works" component={Workspage} />
+        <Route exact path="/store" component={Storepage} />
+        {/* <Route exact path="/store/cart" component={Cart} /> */}
+      </Switch>
+    </main>
+  </Router>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
