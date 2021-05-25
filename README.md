@@ -17,4 +17,4 @@ Started this project to help me improve my frontened development skills using Re
 ### Prototype
 The desktop application was mocked-up using [invision](https://www.invisionapp.com/).
 
-![invision prototype](/assets/invision-prototype)
+![invision prototype](/assets/invision-prototype.png)
